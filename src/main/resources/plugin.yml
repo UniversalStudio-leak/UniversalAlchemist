@@ -1,0 +1,15 @@
+# Plugin recompiled and cracked by NaulbiMIX | Sponsored by FlatiCommunity (https://t.me/flaticommunity)
+# Specially publication for https://teletype.in/@naulbimix/rumine
+#
+# Плагин разработан командой кодеров UniversalStudio.
+# Если Вы обнаружите какой-либо баг, незамедлительно сообщите нам.
+# Vk: vk.com/universalstudio
+# Site: u-studio.su
+name: UniversalAlchemist
+version: 1.0
+author: universalstudio
+main: ru.universalstudio.universalalchemist.AlchemistPlugin
+softdepend: [Vault]
+commands:
+    ualchemist:
+        aliases: [alchemist]

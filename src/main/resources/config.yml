@@ -1,0 +1,77 @@
+# Plugin recompiled and cracked by NaulbiMIX | Sponsored by FlatiCommunity (https://t.me/flaticommunity)
+# Specially publication for https://teletype.in/@naulbimix/rumine
+#
+# Плагин разработан командой кодеров UniversalStudio.
+# Если Вы обнаружите какой-либо баг, незамедлительно сообщите нам.
+# Vk: vk.com/universalstudio
+# Site: u-studio.su
+# ualchemist.alchemist - Доступ к команде /alchemist
+
+# KEY: '' данная переменная вообще не используется
+
+price: 100.5 # Цена за смешивание зелья  
+
+mix-colors: true # Смешать цвета зелей (пример: думаю примера не нужно), если отключено то будет смешиватся цвета которые указаны снизу (mixed-potion.colors)
+
+allowed: # Только эти зелья можно будет смешать
+    enable: false
+    list:
+        - 'speed'
+        - 'regeneration'
+        - 'fire_resistance'
+        - 'increase_damage'
+
+banned-effects:
+    - 'poison'
+
+mixed-potion:
+    title: '&cСмешанное зелье'
+    lore:
+        - ''
+        - '&e| &fДанное зелье смешанно алхимиком!'
+        - ''
+    colors:
+        - 'blue'
+        - 'white'
+    #flags:
+        #- 'hide_enchants'
+
+gui:
+    title: 'Алхимик'
+    window:
+        type: stained_glass_pane
+        data: 6
+    next:
+        type: arrow
+        title: '&e&l>>'
+        lore:
+            - '&fНомер текущей страницы &d%page%&7/&d%maxpage%'
+    previous:
+        type: arrow
+        title: '&e&l<<'
+        lore:
+            - '&fНомер текущей страницы &d%page%&7/&d%maxpage%'
+    cancel:
+        type: stained_glass_pane
+        title: '&cОтменить смешивание'
+        data: 1
+    accept:
+        type: stained_glass_pane
+        data: 5
+        title: '&aСмешать зелье'
+    decline:
+        type: stained_glass_pane
+        data: 14
+        title: '&cОтмена'
+    exit:
+        type: stained_glass_pane
+        data: 14
+        title: '&cВыйти'
+ 
+messages:
+    prefix: '&aАлхимик &e> &f'
+    only-players: 'Команда доступна только игрокам.'
+    no-permission: 'У вас нет прав.'
+    potions-empty: 'У вас нет не одного зелья.;title: &aАлхимик %nl% У вас нет не одного зелья.'
+    not-balance: 'title: &aАлхимик %nl% &cУ вас не достаточно баланса.'
+    accepted: 'title: &aАлхимик %nl% Вы успешно смешали зелье.'
