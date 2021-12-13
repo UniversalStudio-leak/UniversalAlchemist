@@ -17,8 +17,7 @@ import org.bukkit.configuration.file.*;
 
 public class ItemBuilder {
 
-    public static ItemBuilder loadItemBuilder(FileConfiguration config, String path)
-    {
+    public static ItemBuilder loadItemBuilder(FileConfiguration config, String path) {
         Material material = Material.valueOf(config.getString(path + ".type").toUpperCase());
         ItemBuilder builder = new ItemBuilder(material);
 
